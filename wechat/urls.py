@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from erduo import views as erduo_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^weixin/', erduo_views.erduo,name='erduo'),
+
+
 ]
