@@ -1,3 +1,5 @@
+# -*- coding : utf-8 -*-
+
 from django.shortcuts import render
 import hashlib
 from django.utils.encoding import smart_str
