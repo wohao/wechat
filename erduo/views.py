@@ -51,33 +51,34 @@ def autoreply(request):
 
 		if msg_type == "text":
 
-			content = "您好，欢迎关注Erduo1928！"
+			content = xmlData.find('Content').text
+
 			replyMsg = TextMsg(toUser,fromUser,content)
 			print("成功了！！！！！！！")
 			print(replyMsg)
 			return replyMsg.send()
 
 		elif msg_type =="image" :
-			content = "图片消息！"
+			content = "图片消息！功能正在开发中!"
 			replyMsg = TextMsg(toUser, fromUser, content)
 			return replyMsg.send()
 
 		elif msg_type =="voice" :
-			content = "语音消息！"
+			content = "语音消息！功能正在开发中!"
 			replyMsg = TextMsg(toUser, fromUser, content)
 			return replyMsg.send()
 
 		elif msg_type =="video" :
-			content = "视频消息！"
+			content = "视频消息！功能正在开发中!"
 			replyMsg = TextMsg(toUser, fromUser, content)
 			return replyMsg.send()
 
 		elif msg_type =="shortvideo" :
-			content = "小视频！"
+			content = "小视频！功能正在开发中!"
 			replyMsg = TextMsg(toUser, fromUser, content)
 			return replyMsg.send()
 		elif msg_type =="location" :
-			content = "位置消息！"
+			content = "位置消息！功能正在开发中!"
 			replyMsg = TextMsg(toUser, fromUser, content)
 			return replyMsg.send()
 
